@@ -1,0 +1,32 @@
+# number of bits in the address and code
+bits = 24
+
+# repeat every message once
+repeat = 2
+
+# carrier wave frequency
+frequency = 38000
+
+address = 0x2A4C0A
+
+# delays for  different parts of the message
+header = [3356, 1673]
+gap = [420, 74356]
+one = [420, 1254]
+zero = [420, 420]
+
+[[codes]]
+signal = "power"
+code = 0x4A82C2
+
+[[codes]]
+signal = "mute"
+code = 0x86028E
+
+[[codes]]
+signal = "vol_up"
+code = 0x82028A
+
+[[codes]]
+signal = "vol_down"
+code = 0x8A0282

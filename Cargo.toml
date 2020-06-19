@@ -1,0 +1,17 @@
+[package]
+name = "irl"
+version = "0.1.0"
+authors = ["Citruspress <simon.hemaker@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rppal = { version = "0.11.3", features = ["hal"] }
+spin_sleep = "0.3.7"
+serde = { version = "1.0.104", features = ["derive"] }
+toml = { version = "0.5.6" }
+snafu = "0.6.2"
+
+[features]
+default = []
